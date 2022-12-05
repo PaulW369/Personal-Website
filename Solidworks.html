@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<div class="navbar">
+			<div class="container" style="top: 0px;">
+				<a href="" class="brand">
+					<img src="Images\Art and shelf\Phoenix edited.jpg" width="60">
+				</a>
+				<nav class="nav-menu">
+					<a href="index.html" class="nav-link current"> About
+					</a>
+					<a href="Images\Cylaunch\fullscale launch 4.jpg" class="nav-link"> SolidWorks
+					</a>
+					<a href="Images\metal\gear flower.jpg" class="nav-link"> Code
+					</a>
+					<a href="Images\stormy sundowner plane.jpg" class="nav-link"> Contact
+					</a>
+					<a href="https://www.linkedin.com/in/paulwilhelm6/" class="nav-link"> LinkedIn
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<img src="PROFESSIONAL - MECHANICAL DESIGN.png" width="100">
+		<h1 class="INS_title" style="display: inline-block; vertical-align: bottom; margin-bottom: 0px;">
+			SolidWorks
+		</h1>
+		<p>
+			I am a certified solidworks professional, with an advanced level of knowledge in part modelling, assembly modeling, drawings, and simulations. The following is a slideshow showcasing a selection of my work.
+		</p>
+	</div>
+	<div class="container slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">
+		  1 / 3
+		  </div>
+		  <img src="Images\Cylaunch\fiverr picture 1.JPG" style="width:100%">
+		  <div class="text">
+		  Caption Text
+		  </div>
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">
+		  2 / 3
+		  </div>
+		  <img src="Images\Cylaunch\fiverr picture 2.JPG" style="width:100%">
+		  <div class="text">
+		  Caption Two
+		  </div>
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">
+		  3 / 3
+		  </div>
+		  <img src="Images\Cylaunch\fiverr picture 5.JPG" style="width:100%">
+		  <div class="text">
+		  Caption Three
+		  </div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">
+		❮
+		</a>
+		<a class="next" onclick="plusSlides(1)">
+		❯
+		</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)">
+	  </span> 
+	  <span class="dot" onclick="currentSlide(2)">
+	  </span> 
+	  <span class="dot" onclick="currentSlide(3)">
+	  </span> 
+	</div>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+	<div class="footer">
+		<div class="navbar">
+			<div class="container">
+				<a href="C:\Users\pault\Documents\Personal website" class="brand">
+					<img src="Images\Art and shelf\Phoenix edited.jpg" width="60">
+				</a>
+				<nav class="nav-menu">
+					<a href="C:\Users\pault\Documents\Personal website" class="nav-link current"> About
+					</a>
+					<a href="Images\stormy sundowner plane.jpg" class="nav-link"> Contact
+					</a>
+					<a href="https://www.linkedin.com/in/paulwilhelm6/" class="nav-link"> LinkedIn
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>

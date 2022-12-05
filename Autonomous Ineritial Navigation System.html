@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="header">
+		<div class="navbar">
+			<div class="container" style="top: 0px;">
+				<a href="" class="brand">
+					<img src="Images\Art and shelf\Phoenix edited.jpg" width="60">
+				</a>
+				<nav class="nav-menu">
+					<a href="index.html" class="nav-link current"> About
+					</a>
+					<a href="Images\Cylaunch\fullscale launch 4.jpg" class="nav-link"> SolidWorks
+					</a>
+					<a href="Images\metal\gear flower.jpg" class="nav-link"> Code
+					</a>
+					<a href="Images\stormy sundowner plane.jpg" class="nav-link"> Contact
+					</a>
+					<a href="https://www.linkedin.com/in/paulwilhelm6/" class="nav-link"> LinkedIn
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class= "INS_title">
+			Autonomous Inertial Navigation System
+		</h1>
+		<p>
+			The Iowa State University high powered rocketry team, CyLaunch, participates in the annual NASA student launch competition. Each year, the rocket must include a payload that accomplishes a mission in accordance with requirements set out in the handbook. In the 2021-2022 competition, the mission for the payload was to "design a payload capable of autonomously locating the launch vehicle upon landing by identifying the launch vehicle’s grid position on an aerial image of the launch site without the use of a global positioning system (GPS)." Use of a compass or other earth-specific navigation methods were also prohibited, as the mission design was intended to emulate the challanges of navigating a rover on mars. 
+		</p>
+		<p>
+			To complete this mission, myself and a team of four other members designed a system which used two 9-DoF inertial measurement units to collect three dimensional acceleration and rotation data (the magnatometer data was ignored to comply with the mission requirements). The data was saved to a file, and upon landing the data was integrated twice to calculate the flight path of the rocket. Once the flight path was known, the final landing coordinates were used to determine which grid square the rocket landed in, and the data was sent back to the ground station via a LoRa radio.
+		</p>
+		<p>
+			The following document is the flight readiness review that the team wrote just before the payload demonstration flight and the final competition launch at Huntsville Alabama. This document describes in detail the payload and the engineering that went into it over the previous several months. The document is cropped so that only the section describing the payload is visible, which is the section I directly contributed to. The rest of the document is available
+			<a href="Iowa State University - FRR Report.pdf" class="nav-link" style="font-size: 14px; text-decoration: underline; color: #0645ad;"> Here.
+			</a>
+		</p>
+	</div>
+	<div class="container">
+		<iframe src="Iowa State University - Payload FRR Report.pdf" title="FRR Report">
+		<!--#toolbar=0&navpanes=0&scrollbar=0-->
+		</iframe>
+	</div>
+	<div class="container">
+		<h2>
+			Code
+		</h2>
+		<p>
+			The following Arduino code is the final code that was used during the Huntsville launch. It was written by myself and two other team members. My most significant contributions were in the code for the radio, the setup/initialization code, and the GPS code, as well as some of the data collection and saving. The GPS was used to verify the INS results. 
+		</p>
+	</div>
+	<div class="container">
+		<iframe src=https://create.arduino.cc/editor/paulw369/d0bf0a4d-4c33-4781-a483-40d8438788e0/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0>
+		</iframe>
+	</div>
+	<div class="container">
+		<h2>
+			Results
+		</h2>
+		<p>
+			At the end of the project, the team wrote a report about the sucess or failure of the launch and the lessons the team learned during the course of the project. The following document is that report, again cropped to only the sections that I directly contribited to. The relevant sections end at "Scientific Value" and include "Payload Device" at the end. Again, the full document is available
+			<a href="Post Launch Assessment Review Report.pdf" class="nav-link" style="font-size: 14px; text-decoration: underline; color: #0645ad;"> Here.
+			</a>
+		</p>
+	</div>
+	<div class="container">
+		<iframe src="Post Launch Assessment Review Report payload.pdf" title="PLAR Report">
+		<!--#toolbar=0&navpanes=0&scrollbar=0-->
+		</iframe>
+	</div>
+	<div class="footer">
+		<div class="navbar">
+			<div class="container">
+				<a href="C:\Users\pault\Documents\Personal website" class="brand">
+					<img src="Images\Art and shelf\Phoenix edited.jpg" width="60">
+				</a>
+				<nav class="nav-menu">
+					<a href="C:\Users\pault\Documents\Personal website" class="nav-link current"> About
+					</a>
+					<a href="Images\stormy sundowner plane.jpg" class="nav-link"> Contact
+					</a>
+					<a href="https://www.linkedin.com/in/paulwilhelm6/" class="nav-link"> LinkedIn
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>
